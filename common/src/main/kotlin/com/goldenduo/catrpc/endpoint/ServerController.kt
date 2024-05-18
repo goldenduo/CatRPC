@@ -7,7 +7,7 @@ abstract class ServerController:SimpleChannelInboundHandler<Any>() {
     override fun channelRead0(ctx: ChannelHandlerContext, msg:Any) {
         val type=msg::class.java
         val result= handle(msg, type)
-        ctx.writeAndFlush(result)
+        ctx.channel().writeAndFlush(result)
     }
     abstract fun handle(obj:Any,type:Class<*>):Any
 

@@ -6,8 +6,11 @@ buildConfig {
     packageName="com.goldenduo.catrpc"
     buildConfigField("VERSION", 1)
     buildConfigField("DEBUG", true)
+    buildConfigField("INFO", true)
 }
-
+tasks.test {
+    useJUnitPlatform()
+}
 dependencies {
     api("io.netty:netty-all:4.1.109.Final")
     implementation("org.reflections:reflections:0.10.2")
@@ -16,6 +19,9 @@ dependencies {
     implementation("io.protostuff:protostuff-core:${Versions.PROTOSTUFF}")
     implementation("io.protostuff:protostuff-runtime:${Versions.PROTOSTUFF}")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.KOTLIN_COROUTINES}")
+
+
+    testImplementation(kotlin("test"))
 }
 
 kotlin {

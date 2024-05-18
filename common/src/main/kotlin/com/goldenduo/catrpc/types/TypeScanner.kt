@@ -17,11 +17,15 @@ class TypeScanner {
     fun findType(index:Int):Class<*>{
         return availableTypes[index]!!
     }
-
+    fun travel(handle:(Int,Class<*>)->Unit){
+        availableTypes.forEach { t, u ->
+            handle(t,u)
+        }
+    }
 
     fun scanAllMessage() {
         val list = mutableListOf<Class<*>>()
-        val types = reflections.getTypesAnnotatedWith(CatMessage::class.java)
+        val types = reflections.getSubTypesOf(CatMessage::class.java)
         list.addAll(types)
         list.sortedBy {
             it.name

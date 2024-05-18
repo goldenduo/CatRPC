@@ -15,7 +15,7 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder
 import io.netty.handler.codec.LengthFieldPrepender
 import java.net.InetSocketAddress
 
-class CatServer(private val endPoint: EndPoint) : AutoCloseable {
+class CatServer(private val endPoint: EndPoint=EndPoint()) : AutoCloseable {
     private var bossGroup: EventLoopGroup
     private var workerGroup: EventLoopGroup
     private var bootstrap: ServerBootstrap
@@ -24,7 +24,7 @@ class CatServer(private val endPoint: EndPoint) : AutoCloseable {
     private var serverControllerFactory: (() -> ServerController)? = null
 
     init {
-
+        endPoint.type= EndPoint.Type.Server
         // inline epoll-variable
         val isEpoll = Epoll.isAvailable()
 
@@ -81,14 +81,15 @@ class CatServer(private val endPoint: EndPoint) : AutoCloseable {
     inner class ServerInitializer : ChannelInitializer<SocketChannel>() {
         override fun initChannel(ch: SocketChannel) {
             val pipe = ch.pipeline()
-                //from server
-                .addLast(SerializeEncoder(endPoint))
+                //from server,out
                 .addLast(LengthFieldPrepender(endPoint.lengthFieldLength))
+                .addLast(SerializeEncoder(endPoint))
 
 
-                //from socket
 
-                .addLast(LengthFieldBasedFrameDecoder(1024 * 1024, 0, endPoint.lengthFieldLength))
+                //from socket,IN
+
+                .addLast(LengthFieldBasedFrameDecoder(1024 * 1024, 0, endPoint.lengthFieldLength,0,endPoint.lengthFieldLength))
                 .addLast(DeserializeDecoder(endPoint))
             serverControllerFactory?.let { serverControllerFactory->
                 pipe.addLast(serverControllerFactory())

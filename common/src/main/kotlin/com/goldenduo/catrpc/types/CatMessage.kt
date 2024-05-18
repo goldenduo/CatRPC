@@ -1,3 +1,5 @@
 package com.goldenduo.catrpc.types
 
-annotation class CatMessage
+import java.io.Serializable
+
+interface CatMessage:Serializable

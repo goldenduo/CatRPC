@@ -15,12 +15,14 @@ import io.netty.handler.codec.LengthFieldPrepender
 import java.net.InetSocketAddress
 
 
-class CatClient(private val endPoint: EndPoint) : AutoCloseable {
+class CatClient(private val endPoint: EndPoint= EndPoint()) : AutoCloseable {
     private var group: EventLoopGroup
     private var boostrap: Bootstrap
     private var channel: Channel? = null
-
+    @Volatile
+    private var controllerFactory:(()->ClientController?)?=null
     init {
+        endPoint.type= EndPoint.Type.Client
         val isEpoll = Epoll.isAvailable()
         // get runtime processors for thread-size
         val cores = Runtime.getRuntime().availableProcessors()
@@ -29,6 +31,12 @@ class CatClient(private val endPoint: EndPoint) : AutoCloseable {
         boostrap = prepareBoostrap(group)
     }
 
+    /**
+     * setController should be called before connect
+     */
+    fun setController(factory: (() -> ClientController)?) {
+        controllerFactory = factory
+    }
     /**
      * Return if the client is connected or not
      */
@@ -127,15 +135,18 @@ class CatClient(private val endPoint: EndPoint) : AutoCloseable {
 
     private inner class ClientInitializer : ChannelInitializer<SocketChannel>() {
         override fun initChannel(ch: SocketChannel) {
-            ch.pipeline()
+            val pipeline = ch.pipeline()
                 //from client,out
-                .addLast(SerializeEncoder(endPoint))
                 .addLast(LengthFieldPrepender(endPoint.lengthFieldLength))
-
+                .addLast(SerializeEncoder(endPoint))
 
                 //from socket,in
-                .addFirst(LengthFieldBasedFrameDecoder(1024 * 1024, 0, endPoint.lengthFieldLength))
-                .addFirst(DeserializeDecoder(endPoint))
+                .addLast(LengthFieldBasedFrameDecoder(1024 * 1024, 0, endPoint.lengthFieldLength,0, endPoint.lengthFieldLength))
+                .addLast(DeserializeDecoder(endPoint))
+            controllerFactory?.let{controllerFactory->
+                pipeline.addLast(controllerFactory())
+            }
+
 
         }
 

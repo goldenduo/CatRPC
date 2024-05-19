@@ -12,3 +12,6 @@ fun findAvailablePort(): Int {
     }
     throw IllegalArgumentException("No available port found")
 }
+fun Long.toMB():Long{
+    return this/1024/1024
+}

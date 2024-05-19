@@ -9,6 +9,13 @@ fun info(msg:Any?){
 fun debug(msg:Any?){
     if (BuildConfig.DEBUG) println(msg.toString())
 }
+fun Any?.debugLog(){
+    debug(this)
+}
+fun Any?.infoLog(){
+    info(this)
+}
+
 
 fun ByteBuf.peek():String{
     val bytes=ByteArray(readableBytes())

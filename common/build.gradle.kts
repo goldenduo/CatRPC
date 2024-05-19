@@ -6,7 +6,7 @@ buildConfig {
     packageName="com.goldenduo.catrpc"
     buildConfigField("VERSION", 1)
     buildConfigField("DEBUG", true)
-    buildConfigField("INFO", true)
+    buildConfigField("INFO", false)
 }
 tasks.test {
     useJUnitPlatform()
@@ -19,6 +19,7 @@ dependencies {
     implementation("io.protostuff:protostuff-core:${Versions.PROTOSTUFF}")
     implementation("io.protostuff:protostuff-runtime:${Versions.PROTOSTUFF}")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.KOTLIN_COROUTINES}")
+    implementation("com.github.sarveswaran-m:util.concurrent.blockingMap:0.91")
 
 
     testImplementation(kotlin("test"))

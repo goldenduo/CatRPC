@@ -15,7 +15,7 @@ import io.netty.handler.codec.LengthFieldPrepender
 import java.net.InetSocketAddress
 
 
-class CatClient(private val endPoint: EndPoint= EndPoint()) : AutoCloseable {
+open class CatClient(private val endPoint: EndPoint= EndPoint()) : AutoCloseable {
     private var group: EventLoopGroup
     private var boostrap: Bootstrap
     private var channel: Channel? = null

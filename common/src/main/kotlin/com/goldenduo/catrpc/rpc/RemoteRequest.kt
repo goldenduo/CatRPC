@@ -1,20 +1,23 @@
-package com.goldenduo.catrpc.scanner
+package com.goldenduo.catrpc.rpc
 
 import java.io.Serializable
-import java.lang.reflect.Method
 
-data class CatRequest(
+data class RemoteRequest(
     val requestId: Long,
     val className: String,
     val methodName: String,
-    var parameterTypes: Array<Class<*>>,
-    var parameters: Array<Any>,
+    var parameterTypes: Array<Class<*>> = emptyArray(),
+    var parameters: Array<Any> = emptyArray(),
+
 ): Serializable {
+    @Transient
+    lateinit var returnType:Class<*>
+
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
 
-        other as CatRequest
+        other as RemoteRequest
 
         if (requestId != other.requestId) return false
         if (className != other.className) return false
@@ -26,7 +29,7 @@ data class CatRequest(
     }
 
     override fun hashCode(): Int {
-        var result =  requestId.hashCode()
+        var result = requestId.hashCode()
         result = 31 * result + className.hashCode()
         result = 31 * result + methodName.hashCode()
         result = 31 * result + parameterTypes.contentHashCode()

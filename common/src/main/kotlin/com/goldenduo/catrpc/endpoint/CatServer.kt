@@ -15,7 +15,7 @@ import io.netty.handler.codec.LengthFieldBasedFrameDecoder
 import io.netty.handler.codec.LengthFieldPrepender
 import java.net.InetSocketAddress
 
-class CatServer(private val endPoint: EndPoint=EndPoint()) : AutoCloseable {
+open class CatServer(private val endPoint: EndPoint=EndPoint()) : AutoCloseable {
     private var bossGroup: EventLoopGroup
     private var workerGroup: EventLoopGroup
     private var bootstrap: ServerBootstrap

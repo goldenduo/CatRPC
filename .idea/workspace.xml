@@ -4,29 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9ce2dac-06aa-4044-ad73-b55ca1a08e65" name="Changes" comment="fix message queue and add some testcase">
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/IRemote.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteScanner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcCatClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcServer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcDisconnectedException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcOnewayException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcRemoteException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcTimeoutException.kt" afterDir="false" />
+    <list default="true" id="e9ce2dac-06aa-4044-ad73-b55ca1a08e65" name="Changes" comment="temp">
+      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/goldenduo/catrpc/zookeeper/ISimpleRemote.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/goldenduo/catrpc/zookeeper/KeeperClientMain.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/keeper/KeeperClient.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/keeper/KeeperServer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/rpc/remote/Address.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/rpc/remote/ChannelContextAware.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/rpc/remote/IChannelContextAware.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/rpc/remote/RemoteConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/CatClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/CatClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/CatServer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/CatServer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/scanner/CatOnce.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/scanner/CatRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/scanner/CatResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteResponse.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/scanner/ICatRemote.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/utils/Logger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/utils/Logger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/utils/Mix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/utils/Mix.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/test/kotlin/com/goldenduo/catrpc/endpoint/EndPointTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/test/kotlin/com/goldenduo/catrpc/endpoint/EndPointTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/CatClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/CatServer.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/ClientController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/DeserializeDecoder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/EndPoint.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/SerializeEncoder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/ServerController.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/IRemote.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteRequest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteScanner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcCatClient.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcConfig.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcServer.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcDisconnectedException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcOnewayException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcRemoteException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcTimeoutException.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/serialize/Hessian2Serializer.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/serialize/ISerializer.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/serialize/ProtostuffSerializer.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/types/CatMessage.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/types/Ping.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/types/Pong.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/types/TypeScanner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/utils/Logger.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/utils/Mix.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/kotlin/com/goldenduo/catrpc/endpoint/EndPointTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/test/kotlin/com/goldenduo/catrpc/serialize/SerializerTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/kotlin/com/goldenduo/catrpc/zookeeper/Keeper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/kotlin/com/goldenduo/catrpc/zookeeper/Main.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +90,7 @@
         <option value="Kotlin File" />
         <option value="Kotlin Annotation" />
         <option value="Class" />
+        <option value="Kotlin Data Class" />
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Class" />
       </list>
@@ -91,9 +116,14 @@
     &quot;Gradle.EndPointTest.pingAndPong.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Hessian2SerializerTest.serialize.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.ProtostuffSerializerTest.serialize.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RpcTest.testCommonRemote (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RpcTest.testCommonRemote.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SerializerTest.executor&quot;: &quot;Run&quot;,
     &quot;Kotlin.EndPointTestKt.executor&quot;: &quot;Run&quot;,
     &quot;Kotlin.ICatRemoteKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.KeeperClientMainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.KeeperMainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.KeeperServerMainKt.executor&quot;: &quot;Run&quot;,
     &quot;Kotlin.MainKt (1).executor&quot;: &quot;Run&quot;,
     &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
     &quot;Kotlin.RemoteScannerKt.executor&quot;: &quot;Run&quot;,
@@ -105,7 +135,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/duoduo/Documents/Code/CatRPC/common/src/main/kotlin/com/goldenduo/catrpc/scanner&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/duoduo/Documents/Code/CatRPC/app/src/main/kotlin/com/goldenduo/catrpc/zookeeper&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -117,10 +147,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/kotlin/com/goldenduo/catrpc/zookeeper" />
       <recent name="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/scanner" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/remote" />
       <recent name="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/serialize" />
       <recent name="$PROJECT_DIR$/zookeeper/src/main/kotlin/com/goldenduo/catrpc/zookeeper" />
     </key>
@@ -128,22 +160,51 @@
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.goldenduo.catrpc.rpc" />
+      <recent name="com.goldenduo.catrpc.rpc.remote" />
+      <recent name="com.goldenduo.catrpc.rpc.types" />
+      <recent name="com.goldenduo.catrpc.types" />
       <recent name="com.goldenduo.catrpc.rpc.exception" />
-      <recent name="com.goldenduo.catrpc.endpoint" />
-      <recent name="com.goldenduo.catrpc.client" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.goldenduo.catrpc.rpc" />
       <recent name="com.goldenduo.catrpc.endpoint" />
       <recent name="com.goldenduo.catrpc.serialize" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.goldenduo.catrpc.rpc" />
+      <recent name="com.goldenduo.catrpc.rpc.remote" />
       <recent name="com.goldenduo.catrpc.rpc.exception" />
       <recent name="com.goldenduo.catrpc.types" />
       <recent name="com.goldenduo.catrpc.serialize" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.RemoteScannerKt">
-    <configuration name="EndPointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Kotlin.KeeperClientMainKt">
+    <configuration name="RpcTest.testCommonRemote (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":rpc:test" />
+            <option value="--tests" />
+            <option value="&quot;com.goldenduo.catrpc.rpc.RpcTest.testCommonRemote&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RpcTest.testCommonRemote" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -156,7 +217,7 @@
           <list>
             <option value=":common:test" />
             <option value="--tests" />
-            <option value="&quot;com.goldenduo.catrpc.endpoint.EndPointTest&quot;" />
+            <option value="&quot;com.goldenduo.catrpc.rpc.RpcTest.testCommonRemote&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,57 +228,16 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="EndPointTest.pingAndPong" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":common:test" />
-            <option value="--tests" />
-            <option value="&quot;com.goldenduo.catrpc.endpoint.EndPointTest.pingAndPong&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="KeeperClientMainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.goldenduo.catrpc.zookeeper.KeeperClientMainKt" />
+      <module name="CatRPC.app.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="SerializerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":common:test" />
-            <option value="--tests" />
-            <option value="&quot;com.goldenduo.catrpc.serialize.SerializerTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.goldenduo.catrpc.MainKt" />
-      <module name="CatRPC.common.main" />
+    <configuration name="KeeperServerMainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.goldenduo.catrpc.zookeeper.KeeperServerMainKt" />
+      <module name="CatRPC.app.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,19 +251,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.KeeperClientMainKt" />
+        <item itemvalue="Kotlin.KeeperServerMainKt" />
+        <item itemvalue="Gradle.RpcTest.testCommonRemote (1)" />
+        <item itemvalue="Gradle.RpcTest.testCommonRemote" />
         <item itemvalue="Kotlin.RemoteScannerKt" />
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.EndPointTest.pingAndPong" />
-        <item itemvalue="Gradle.EndPointTest" />
-        <item itemvalue="Gradle.SerializerTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
-        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-995e55e7" />
+        <option value="jdk-17.0.10-azul-17.0.10-4caba194b151-d69ea429" />
       </set>
     </attachedChunks>
   </component>
@@ -268,6 +288,9 @@
       <workItem from="1715998703884" duration="14786000" />
       <workItem from="1716022560857" duration="4813000" />
       <workItem from="1716080850999" duration="9268000" />
+      <workItem from="1716255624234" duration="23990000" />
+      <workItem from="1716348662509" duration="6063000" />
+      <workItem from="1716365759927" duration="1175000" />
     </task>
     <task id="LOCAL-00001" summary="fix message queue and add some testcase">
       <option name="closed" value="true" />

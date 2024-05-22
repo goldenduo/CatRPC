@@ -16,5 +16,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "CatRPC"
-include("zookeeper")
-include("common")
+include("app")
+include("rpc")

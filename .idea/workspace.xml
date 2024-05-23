@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9ce2dac-06aa-4044-ad73-b55ca1a08e65" name="Changes" comment="add jitpack">
+    <list default="true" id="e9ce2dac-06aa-4044-ad73-b55ca1a08e65" name="Changes" comment="fix jetpack mistake">
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +81,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -276,7 +280,7 @@
       <workItem from="1716255624234" duration="23990000" />
       <workItem from="1716348662509" duration="6063000" />
       <workItem from="1716365759927" duration="6115000" />
-      <workItem from="1716436062814" duration="55000" />
+      <workItem from="1716436062814" duration="1146000" />
     </task>
     <task id="LOCAL-00001" summary="fix message queue and add some testcase">
       <option name="closed" value="true" />
@@ -302,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716435478395</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix jetpack mistake">
+      <option name="closed" value="true" />
+      <created>1716436146247</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716436146247</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +324,7 @@
     <MESSAGE value="fix message queue and add some testcase" />
     <MESSAGE value="finish base function" />
     <MESSAGE value="add jitpack" />
-    <option name="LAST_COMMIT_MESSAGE" value="add jitpack" />
+    <MESSAGE value="fix jetpack mistake" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix jetpack mistake" />
   </component>
 </project>

@@ -19,7 +19,7 @@ tasks.test {
 val sourcesJar by tasks.creating(Jar::class) {
     archiveClassifier.set("sources")
     from(sourceSets.getByName("main").allSource)
-    from("LICENCE.md") {
+    from("LICENCE.txt") {
         into("META-INF")
     }
 }

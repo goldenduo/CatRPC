@@ -4,53 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9ce2dac-06aa-4044-ad73-b55ca1a08e65" name="Changes" comment="temp">
-      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/goldenduo/catrpc/zookeeper/ISimpleRemote.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/kotlin/com/goldenduo/catrpc/zookeeper/KeeperClientMain.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/keeper/KeeperClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/keeper/KeeperServer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/rpc/remote/Address.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/rpc/remote/ChannelContextAware.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/rpc/remote/IChannelContextAware.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc/src/main/kotlin/com/goldenduo/catrpc/rpc/remote/RemoteConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e9ce2dac-06aa-4044-ad73-b55ca1a08e65" name="Changes" comment="finish base function">
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/com/goldenduo/buildsrc/ProjectSetting.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/CatClient.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/CatServer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/ClientController.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/DeserializeDecoder.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/EndPoint.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/SerializeEncoder.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/endpoint/ServerController.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/IRemote.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteRequest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RemoteScanner.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcCatClient.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/RpcServer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcDisconnectedException.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcException.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcOnewayException.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcRemoteException.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/rpc/exception/RpcTimeoutException.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/serialize/Hessian2Serializer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/serialize/ISerializer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/serialize/ProtostuffSerializer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/types/CatMessage.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/types/Ping.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/types/Pong.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/types/TypeScanner.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/utils/Logger.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/com/goldenduo/catrpc/utils/Mix.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/test/kotlin/com/goldenduo/catrpc/endpoint/EndPointTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/test/kotlin/com/goldenduo/catrpc/serialize/SerializerTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/kotlin/com/goldenduo/catrpc/zookeeper/Keeper.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zookeeper/src/main/kotlin/com/goldenduo/catrpc/zookeeper/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +31,31 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="CatRPC" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CatRPC" type="f1a62948:ProjectNode" />
+                <item name="rpc" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CatRPC" type="f1a62948:ProjectNode" />
+                <item name="rpc" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CatRPC" type="f1a62948:ProjectNode" />
+                <item name="rpc" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CatRPC" type="f1a62948:ProjectNode" />
+                <item name="rpc" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -290,7 +272,7 @@
       <workItem from="1716080850999" duration="9268000" />
       <workItem from="1716255624234" duration="23990000" />
       <workItem from="1716348662509" duration="6063000" />
-      <workItem from="1716365759927" duration="1175000" />
+      <workItem from="1716365759927" duration="4925000" />
     </task>
     <task id="LOCAL-00001" summary="fix message queue and add some testcase">
       <option name="closed" value="true" />
@@ -300,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716018640808</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish base function">
+      <option name="closed" value="true" />
+      <created>1716367442400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716367442400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +298,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix message queue and add some testcase" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix message queue and add some testcase" />
+    <MESSAGE value="finish base function" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish base function" />
   </component>
 </project>

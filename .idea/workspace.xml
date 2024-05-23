@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9ce2dac-06aa-4044-ad73-b55ca1a08e65" name="Changes" comment="finish base function">
-      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/com/goldenduo/buildsrc/ProjectSetting.kt" afterDir="false" />
+    <list default="true" id="e9ce2dac-06aa-4044-ad73-b55ca1a08e65" name="Changes" comment="add jitpack">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/rpc/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +123,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -272,7 +275,8 @@
       <workItem from="1716080850999" duration="9268000" />
       <workItem from="1716255624234" duration="23990000" />
       <workItem from="1716348662509" duration="6063000" />
-      <workItem from="1716365759927" duration="4925000" />
+      <workItem from="1716365759927" duration="6115000" />
+      <workItem from="1716436062814" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="fix message queue and add some testcase">
       <option name="closed" value="true" />
@@ -290,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716367442400</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add jitpack">
+      <option name="closed" value="true" />
+      <created>1716435478395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716435478395</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +311,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix message queue and add some testcase" />
     <MESSAGE value="finish base function" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish base function" />
+    <MESSAGE value="add jitpack" />
+    <option name="LAST_COMMIT_MESSAGE" value="add jitpack" />
   </component>
 </project>
